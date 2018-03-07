@@ -6,7 +6,7 @@ namespace BreakingNewsWF
     {
         public int CalculateNumberOfHits(IWebColector webColl, string keyword)
         {
-            if (string.IsNullOrEmpty(webColl.HtmlCode) || string.IsNullOrEmpty(keyword) || webColl == null)
+            if (webColl == null || string.IsNullOrEmpty(webColl.HtmlCode) || string.IsNullOrEmpty(keyword))
             {
                 return -1;
             }

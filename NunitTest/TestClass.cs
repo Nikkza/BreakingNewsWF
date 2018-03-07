@@ -53,7 +53,7 @@ namespace NunitTest
         public void TestNullWebCollCalculator()
         {
             IWebCalCulator wc = new WebCalCulator();
-            IWebColector wb = new WebCollector();
+            IWebColector wb = null;
             string s = "hej";
             var results = wc.CalculateNumberOfHits(wb, keyword: s);
             Assert.AreEqual(-1, results);
